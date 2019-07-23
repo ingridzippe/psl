@@ -1,0 +1,25 @@
+{
+  "name": "psl",
+  "version": "1.0.0",
+  "description": "psl app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingridzippe/psl.git"
+  },
+  "author": "Ingrid Zippe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingridzippe/psl/issues"
+  },
+  "homepage": "https://github.com/ingridzippe/psl#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "facebook-nodejs-business-sdk": "^3.3.3",
+    "googleads-node-lib": "0.0.34"
+  }
+}
