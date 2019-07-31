@@ -65,7 +65,7 @@ axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
 //   });
 
 app.get('/instapage', (req, res) => {
-  console.log("REGISTERING");
+  console.log("REGISTERING GET");
 	res.status(200).send({
 		success: 'true',
 		message: 'todos retrieved successfully'
@@ -73,7 +73,7 @@ app.get('/instapage', (req, res) => {
 });
 
 app.post('/instapage', (req, res) => {
-  console.log("REGISTERING");
+  console.log("REGISTERING POST");
   res.status(200).send({
     success: 'true',
     message: 'todos retrieved successfully'
