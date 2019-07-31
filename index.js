@@ -20,6 +20,17 @@ var campaigns;
 var AdWords = require('googleads-node-lib');
 
 console.log("DATABASE");
+
+axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+  .then(response => {
+    console.log(response.data.url);
+    console.log(typeof response.data.explanation);
+  })
+  .catch(error => {
+    console.log(error);
+  });
+
+
 // console.log(dummyDb);
 
 
@@ -53,13 +64,13 @@ console.log("DATABASE");
 // 	console.log(error);
 //   });
 
-// app.post('/instapage', (req, res) => {
-// 	res.status(200).send({
-// 		success: 'true',
-// 		message: 'todos retrieved successfully',
-// 		todos: db
-// 	})
-// });
+app.get('/instapage', (req, res) => {
+  console.log("REGISTERING");
+	res.status(200).send({
+		success: 'true',
+		message: 'todos retrieved successfully'
+	})
+});
 
 // axios.get('https://safe-shore-59113.herokuapp.com/')
 
