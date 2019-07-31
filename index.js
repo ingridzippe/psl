@@ -72,6 +72,14 @@ app.get('/instapage', (req, res) => {
 	})
 });
 
+app.post('/instapage', (req, res) => {
+  console.log("REGISTERING");
+  res.status(200).send({
+    success: 'true',
+    message: 'todos retrieved successfully'
+  })
+});
+
 // axios.get('https://safe-shore-59113.herokuapp.com/')
 
 // axios.post('https://safe-shore-59113.herokuapp.com/instapage')
