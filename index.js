@@ -67,6 +67,11 @@ axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
 app.get('/instapage', (req, res) => {
   console.log("REGISTERING GET");
   console.log("button clicked get / instapage");
+  ga('send', 'event', {
+    eventCategory: 'Outbound Link',
+    eventAction: 'click',
+    eventLabel: event.target.href
+  });
 	res.status(200).send({
 		success: 'true',
 		message: 'todos retrieved successfully'
@@ -76,6 +81,11 @@ app.get('/instapage', (req, res) => {
 app.post('/instapage', (req, res) => {
   console.log("REGISTERING POST");
   console.log("button clicked post / instapage");
+  ga('send', 'event', {
+    eventCategory: 'Outbound Link',
+    eventAction: 'click',
+    eventLabel: event.target.href
+  });
   res.status(200).send({
     success: 'true',
     message: 'todos retrieved successfully'
